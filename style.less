@@ -1,0 +1,284 @@
+/*
+ * In this file, you may style your site using CSS or LESS as well as overwrite UIkit LESS variables.
+ * Make sure to enable development mode via the Admin->Appearance->Settings option while working on your website. LESS will then be processed on the fly.
+ */
+
+@utility-container-large-max-width: 700px;
+
+html {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333;
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+b,
+strong {
+  font-weight: 500;
+}
+
+em {
+  color: inherit;
+}
+
+a {
+  color: #000;
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-color: #fe1000;
+}
+
+a:hover {
+  color: #fe1000;
+  text-decoration: underline;
+}
+
+.tm-main {
+  background-color: #fff;
+}
+
+.uk-container {
+  max-width: 700px;
+  padding: 0px;
+}
+
+// Header
+
+.gg-header {
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+}
+
+img.tm-logo {
+  width: 110px;
+  height: 30px;
+}
+
+img.tm-logo:hover {
+  opacity: .5;
+}
+
+.tm-header {
+  border: none;
+}
+
+.gg-header .uk-container {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ededed;
+}
+
+// Nav
+
+.uk-navbar-nav {
+  float: none;
+
+}
+
+.uk-navbar-nav > li {
+
+}
+
+.uk-navbar-nav > li > a {
+  font-size: .8rem;
+  font-family: inherit;
+  font-weight: 500;
+  letter-spacing: .02rem;
+  // text-transform: uppercase;
+}
+
+.uk-navbar-nav > li:first-child > a:hover {
+  border-bottom: 3px solid #fe1000;
+}
+
+.uk-navbar-nav > li:nth-child(2) > a:hover {
+  border-bottom: 3px solid #d97100;
+}
+
+.uk-navbar-nav > li:nth-child(3) > a:hover {
+  border-bottom: 3px solid #e1cc00;
+}
+
+.uk-navbar-nav > li:nth-child(4) > a:hover {
+  border-bottom: 3px solid #00C719;
+}
+
+.uk-navbar-nav > li:nth-child(5) > a:hover {
+  border-bottom: 3px solid #0048c6;
+}
+
+.uk-navbar-nav > li:last-child > a:hover {
+  border-bottom: 3px solid #a403ff;
+}
+
+// Content
+
+.uk-grid {
+  padding-left: 0;
+}
+
+.uk-panel-box {
+  padding: 0px;
+  color: inherit;
+}
+
+// Headings
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  color: #111;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+.gg-article-title {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 700;
+  text-transform: none;
+  background: -webkit-linear-gradient(#fe1000, #111);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// tags
+.beans_post_content {
+  margin-bottom: 2rem;
+}
+
+.beans_post_meta_tags {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.beans_post_meta_tags a:before {
+  content: "#";
+}
+
+// Footer
+
+.tm-footer {
+  border-top: none;
+}
+
+.tm-footer .uk-container {
+  padding-top: 2rem;
+  border-top: 1px solid #ededed;
+}
+
+// Twitter Follow
+.twitter-follow-button {
+  background-color: #fe1000;
+  // background-color: #1b95e0;
+  border-radius: 3px;
+  padding: 1px 8px 1px 6px;
+  color: #fff;
+  font-weight: 500;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.twitter-follow-button:hover {
+  background-color: #1b95e0;
+  color: #fff;
+  text-decoration: none;
+}
+
+// Homepage Hero
+
+.gg-homepage-hero {
+  width: 100%;
+  background-color: #fe1000;
+  background: linear-gradient(0deg, #000 0%, #fe1000 100%);
+  color: #fff;
+}
+
+.gg-homepage-hero > .uk-container {
+  margin: auto;
+}
+
+.gg-homepage-hero section {
+  margin: auto auto;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.gg-homepage-hero h1 {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 700;
+}
+
+.gg-homepage-hero p {
+  font-size: inherit;
+  font-weight: 500;
+}
+
+// Responsive
+
+@media (max-width: 959px) {
+
+  .tm-site-branding {
+    float: left;
+  }
+
+  .tm-primary-menu {
+    float: right;
+  }
+
+}
+
+@media (min-width: 960px) {
+
+  .tm-site-branding {
+    text-align: center;
+    margin-bottom: .5rem;
+    float: none;
+  }
+
+  .tm-primary-menu {
+    margin: auto auto;
+    text-align: center;
+    float: none;
+  }
+
+}
+
+@media (min-width: 1220px) {
+
+  .gg-homepage-hero h1,
+  .gg-article-title {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+
+  .uk-navbar-nav > li > a {
+    font-size: 1rem;
+  }
+
+  .gg-homepage-hero p,
+  article {
+    font-size: 1.2rem;
+  }
+
+}
