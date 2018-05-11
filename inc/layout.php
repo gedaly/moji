@@ -45,9 +45,6 @@ function gg_remove_post_meta_items($items ) {
     return $items;
 }
 
-// TODO find out why this isn't working
-// beans_remove_action('beans_post_meta_item[_author]');
-
 // Make tags text normal size
 beans_remove_attribute( 'beans_post_meta_tags', 'class', 'uk-text-small' );
 
