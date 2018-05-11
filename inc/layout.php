@@ -31,6 +31,20 @@ beans_add_attribute( 'beans_post_title', 'class', 'gg-article-title' );
 beans_remove_action( 'beans_post_meta_categories' );
 beans_remove_action( 'beans_post_navigation' );
 
+//
+add_filter( 'beans_post_meta_items', 'gg_remove_post_meta_items' );
+/**
+ * Remove Author Meta
+ *
+ * @since 1.0.0
+ * @param $items
+ * @return mixed
+ */
+function gg_remove_post_meta_items($items ) {
+    unset( $items['author'] );
+    return $items;
+}
+
 // TODO find out why this isn't working
 // beans_remove_action('beans_post_meta_item[_author]');
 
