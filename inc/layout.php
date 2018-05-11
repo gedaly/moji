@@ -31,18 +31,20 @@ beans_add_attribute( 'beans_post_title', 'class', 'gg-article-title' );
 beans_remove_action( 'beans_post_meta_categories' );
 beans_remove_action( 'beans_post_navigation' );
 
-//
 add_filter( 'beans_post_meta_items', 'gg_remove_post_meta_items' );
 /**
  * Remove Author Meta
  *
  * @since 1.0.0
+ *
  * @param $items
+ *
  * @return mixed
  */
-function gg_remove_post_meta_items($items ) {
-    unset( $items['author'] );
-    return $items;
+function gg_remove_post_meta_items( $items ) {
+	unset( $items['author'] );
+
+	return $items;
 }
 
 // Make tags text normal size
@@ -68,22 +70,5 @@ function example_footer_credit_right_text() {
 
 }
 
-add_filter( 'beans_main_before_markup', 'gg_homepage_hero' );
-/**
- * Creates a homepage hero section
- *
- * TODO replace everything in the `<p>` tag with a function, create a function that puts custom field in customizer
- *       for this content
- */
-function gg_homepage_hero() {
-	if ( is_front_page() ) {
-
-		beans_remove_action( 'beans_post_title' );
-
-		echo '<div class="gg-homepage-hero"><div class="uk-container"><section><h1>' . get_the_title() . '</h1><p>I\'m an
-🎭Actor ✍️Writer 🎬Filmmaker 🥋Martial Artist 👨🏻‍💻Web Developer 🤹Professional Distraction 🥊Unlikely Action Hero</p></section></div></div>';
-
-	}
-}
 
 
